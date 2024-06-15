@@ -1,0 +1,7 @@
+.educacion-container {
+  padding: 0 100px;
+  margin: 35px 0;
+  background-color: hsl(0, 0%, 10%);
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,19 @@
+.card-item {
+  display: inline-block;
+  margin: 15px 15px;
+  padding: 20px;
+  background-color: hsl(0, 0%, 20%);
+  border: 1px solid hsla(0, 0%, 20%, 0.2);
+  box-shadow: 5px 5px 5px hsla(0, 0%, 20%, 0.2);
+  border-radius: 8px;
+  width: 400px;
+}
+
+.card-detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-item:hover {
+  background-color: hsl(225, 70%, 45%);
+}

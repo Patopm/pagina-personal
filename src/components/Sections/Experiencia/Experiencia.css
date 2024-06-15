@@ -1,0 +1,11 @@
+.experiencia-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px;
+  margin: 35px 0;
+}
+
+.experiencia-container button {
+  width: fit-content;
+  margin: 15px;
+}

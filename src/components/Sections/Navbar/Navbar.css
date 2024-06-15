@@ -1,0 +1,27 @@
+.navbar-items {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: hsl(0, 0%, 10%);
+  width: 100vw;
+  height: 5vh;
+}
+
+.navbar-items li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: fit-content;
+}
+
+a {
+  font-weight: 500;
+  color: hsl(225, 70%, 60%);
+  text-decoration: inherit;
+}
+a:hover {
+  color: hsl(225, 70%, 50%);
+}

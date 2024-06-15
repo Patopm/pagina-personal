@@ -1,0 +1,18 @@
+.chip-tecnologia {
+  display: flex;
+  background-color: hsl(225, 70%, 50%);
+  margin: 15px;
+  padding: 1rem;
+  width: fit-content;
+  border-radius: 20px;
+  cursor: default;
+  list-style: none;
+}
+
+.chip-tecnologia p {
+  margin: 0 5px;
+}
+
+.chip-tecnologia:hover {
+  background-color: hsl(225, 70%, 40%);
+}

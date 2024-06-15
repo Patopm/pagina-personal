@@ -1,0 +1,133 @@
+.tecnologias-container {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  padding: 0 100px;
+  margin: 35px 0;
+  position: relative;
+  overflow: hidden;
+}
+/*
+.tecnologias-container:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 100%;
+  background: linear-gradient(to left, transparent, hsl(0, 0%, 14%));
+  content: "";
+  z-index: 2;
+}
+.tecnologias-container::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 350px;
+  height: 100%;
+  background: linear-gradient(to right, transparent, hsl(0, 0%, 14%));
+  content: "";
+  z-index: 2;
+}
+
+.tecnologias-dominadas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+  position: relative;
+  animation: 20s scrollLeft infinite linear;
+}
+.tecnologias-dominadas:hover {
+  animation-play-state: paused;
+}
+
+.tecnologias-proceso {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+  position: relative;
+  animation: 20s scrollRight infinite linear;
+}
+
+.tecnologias-proceso:hover {
+  animation-play-state: paused;
+}
+
+.tecnologias-aprender {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+  position: relative;
+  animation: 20s scrollLeft infinite linear;
+}
+
+.tecnologias-aprender:hover {
+  animation-play-state: paused;
+}
+
+@keyframes scrollLeft {
+  form {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes scrollRight {
+  form {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+} */
+
+.scroller {
+  max-width: 100%;
+}
+
+.scroller[data-animated="true"] {
+  overflow: hidden;
+
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .inner_scroller {
+  width: fit-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-direction: 20s;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-direction: 120s;
+}
+
+.inner_scroller {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+  }
+}
